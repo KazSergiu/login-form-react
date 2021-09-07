@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/login-form-react/static/css/main.b09a727c.chunk.css",
+    "main.js": "/login-form-react/static/js/main.714cd2e5.chunk.js",
+    "main.js.map": "/login-form-react/static/js/main.714cd2e5.chunk.js.map",
+    "runtime-main.js": "/login-form-react/static/js/runtime-main.007e18a5.js",
+    "runtime-main.js.map": "/login-form-react/static/js/runtime-main.007e18a5.js.map",
+    "static/js/2.b70ee554.chunk.js": "/login-form-react/static/js/2.b70ee554.chunk.js",
+    "static/js/2.b70ee554.chunk.js.map": "/login-form-react/static/js/2.b70ee554.chunk.js.map",
+    "index.html": "/login-form-react/index.html",
+    "static/css/main.b09a727c.chunk.css.map": "/login-form-react/static/css/main.b09a727c.chunk.css.map",
+    "static/js/2.b70ee554.chunk.js.LICENSE.txt": "/login-form-react/static/js/2.b70ee554.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.007e18a5.js",
+    "static/js/2.b70ee554.chunk.js",
+    "static/css/main.b09a727c.chunk.css",
+    "static/js/main.714cd2e5.chunk.js"
+  ]
+}
