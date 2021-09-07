@@ -4,8 +4,13 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
+import LogoutMessage from "./components/LogoutMessage";
+import { useSelector } from "react-redux";
+import HaveAnAccount from "./components/HaveAnAccount";
 
 const App = () => {
+  const user = useSelector((state) => state.user.value);
+
   return (
     <Router>
       <div className="general-contanier">
@@ -16,10 +21,10 @@ const App = () => {
               <HomePage />
             </Route>
             <Route path="/register-page">
-              <RegisterForm />
+              {!user.logedIn ? <RegisterForm /> : <HaveAnAccount />}
             </Route>
             <Route path="/login-page">
-              <LoginForm />
+              {!user.logedIn ? <LoginForm /> : <LogoutMessage />}
             </Route>
           </Switch>
         </div>

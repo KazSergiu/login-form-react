@@ -1,11 +1,28 @@
 import React from "react";
 import { Form, Field } from "react-final-form";
 import Flip from "react-reveal/Flip";
+import { useDispatch } from "react-redux";
+import { register } from "../usersState/user";
+import { useHistory } from "react-router-dom";
 
 const RegisterForm = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
+
   const onSubmit = (e) => {
-    debugger;
+    dispatch(
+      register({
+        email: e.email,
+        password: e.password,
+        confirmPassword: e.confirmPassword,
+        firstName: e.firstName,
+        lastName: e.lastName,
+        id: e.password,
+      })
+    );
+    history.push("/login-page");
   };
+
   const validate = (e) => {
     const errors = {};
     if (!e.email) {
@@ -28,6 +45,7 @@ const RegisterForm = () => {
     }
     return errors;
   };
+
   return (
     <div className="register-form-container">
       <Form

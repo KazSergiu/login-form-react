@@ -48,7 +48,7 @@ nav h1 {
 .links-container {
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 3rem;
 }
 
 .links-container a {
@@ -136,4 +136,149 @@ form p {
   color: #41444b;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* Logout Button */
+.links-container .logout-container {
+  margin-top: 0;
+}
+
+.links-container .logout-container button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #41444b;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  padding: 0;
+}
+
+.links-container .logout-container button:hover {
+  color: red;
+  transition: color 1s;
+  background-color: transparent;
+}
+
+/* Logout Container */
+.logout-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-container h1 {
+  font-size: 3rem;
+  color: #6734ba;
+}
+
+.logout-container button {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  background-color: red;
+  border: none;
+  border-radius: 0.5rem;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.logout-container button:hover {
+  background-color: tomato;
+  transition: background-color 0.5s, color 0.8s;
+}
+
+/* Have Account */
+.have-account h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #6734ba;
+  padding-top: 2rem;
+}
+
+/* Medya QUery */
+@media only screen and (max-width: 1100px) {
+  nav,
+  .content {
+    width: 49rem;
+  }
+  form h2 {
+    text-align: center;
+  }
+  .register-form-container {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  nav {
+    width: 34rem;
+    justify-content: initial;
+    margin: auto;
+  }
+  .content {
+    width: 34rem;
+  }
+  nav h1 {
+    font-size: 2rem;
+    padding-right: 2rem;
+  }
+  .links-container {
+    gap: 2rem;
+  }
+  .links-container a {
+    font-size: 1rem;
+  }
+  .links-container .logout-container button {
+    font-size: 1rem;
+  }
+
+  form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  form button {
+    width: 29%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  nav,
+  .content {
+    width: 25rem;
+  }
+  nav h1 {
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+  .links-container a,
+  .links-container .logout-container button {
+    font-size: 0.8rem;
+  }
+  form h2,
+  .input-block label {
+    font-size: 1rem;
+  }
+  .input-block input {
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
+  }
+  form button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav,
+  .content {
+    width: 20rem;
+  }
+  nav h1 {
+    padding-right: 0.5rem;
+  }
+  .links-container {
+    gap: 0.5rem;
+  }
+  form button {
+    width: 40%;
+  }
 }
