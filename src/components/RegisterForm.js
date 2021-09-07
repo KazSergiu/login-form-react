@@ -17,7 +17,6 @@ const RegisterForm = () => {
         confirmPassword: e.confirmPassword,
         firstName: e.firstName,
         lastName: e.lastName,
-        id: e.password,
       })
     );
     history.push("/login-page");
